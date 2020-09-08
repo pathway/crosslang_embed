@@ -1,0 +1,15 @@
+annoy==1.16.3
+google-api-core==1.22.2
+google-cloud==0.34.0
+google-cloud-translate==3.0.1
+matplotlib==3.3.1
+pandas==1.0.4
+protobuf==3.13.0
+requests==2.23.0
+tensorflow==2.2.0
+tensorflow-estimator==2.2.0
+tensorflow-hub==0.8.0
+tensorflow-text==2.2.0
+plotly==4.9.0
+umap-learn==0.4.6
+seaborn
