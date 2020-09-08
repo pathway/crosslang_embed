@@ -2,6 +2,10 @@
 
 Process multilingual phrases using embeddings. Combines translation, phrase embedding, embedding search, and embedding visualization.
 
+Depends on:
+- Universal Sentence Encoder https://tfhub.dev/google/universal-sentence-encoder-multilingual/3 See https://arxiv.org/abs/1803.11175
+- Google Cloud Translate https://cloud.google.com/translate/docs
+
 Partly based on https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/cross_lingual_similarity_with_tf_hub_multilingual_universal_encoder.ipynb
 
 ### Install
