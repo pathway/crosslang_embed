@@ -224,25 +224,23 @@ class MultilangPhrase():
 
         plt.gca().set_aspect('equal', 'datalim')
 
-        fig = px.scatter(self.dfmain, x='x', y='y', text='en', ) #,size_max=20size='pillar_counts_src' )
+        fig = px.scatter(self.dfmain, x='x', y='y', text='en', )
         fig.update_traces(textposition='top center')
         fig.update_layout(
             height=900, width=1000,
-            title_text='Planets', font_size=9
+            title_text='Phrase Embedding', font_size=9
         )
         fig.show()
 
 
-        fig = px.scatter(self.dfmain, x='x', y='y', text='src',) #size='pillar_counts_src',size_max=100 )
+        fig = px.scatter(self.dfmain, x='x', y='y', text='src',)
         fig.update_traces(textposition='top center')
         fig.update_layout(
-            height=1800, width=2400,
-            title_text='Phrase embedding'
+            height=900, width=1000,
+            title_text='Phrase Embedding', font_size=9
         )
         fig.show()
 
 
-        plt.scatter(self.umap_embedding[:, 0], self.umap_embedding[:, 1], )
-        plt.title('UMAP projection', fontsize=24);
-
-
+        #plt.scatter(self.umap_embedding[:, 0], self.umap_embedding[:, 1], )
+        #plt.title('UMAP projection', fontsize=24);

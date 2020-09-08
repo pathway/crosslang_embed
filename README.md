@@ -31,15 +31,36 @@ Process phrases to translate them, get embeddings, and load embeddings.
 mph.process_phrases(phrase_list)
 ```
 
-Show all translations:
+Show all translations and languages:
 ```
 print(mph.dfmain)
+
+                        en src_lang
+src                                
+hello                hello       en
+bonjourno            Hello       fr
+good evening  good evening       en
+bon soir      good evening       fr
+hi                      hi       en
+good night      good night       en
+boujour              hello       fr
+bon nuit        good night       fr
 ```
 
-Find matches for a single phrase:
+Find matches for a single phrase. Usually a limit around 0.9 is good:
 ```
 df = mph.find_matches_index("salut", )
 print( df[ df.dist<1.2].head(30) )
+
+             en        phrase      dist lang
+0            hi            hi  0.632794   en
+1         hello         hello  0.639977   fr
+2         hello       boujour  0.639977   en
+3         Hello     bonjourno  0.812586   fr
+4  good evening  good evening  1.050936   en
+5  good evening      bon soir  1.050936   en
+6    good night      bon nuit  1.083032   fr
+7    good night    good night  1.083032   fr
 ```
 
 Cluster phrases:
@@ -47,3 +68,5 @@ Cluster phrases:
 mph.umap_embeddings()
 mph.plot_embeddings()
 ```
+![Cluster phrases](img/embed_phrases.png "Logo Title Text 1")
+
