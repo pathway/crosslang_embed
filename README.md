@@ -1,7 +1,6 @@
 # crosslang_embed
 
-Process multilingual phrases.
-Combines translation, embedding search, and embedding visualization.
+Process multilingual phrases using embeddings. Combines translation, phrase embedding, embedding search, and embedding visualization.
 
 Partly based on https://colab.research.google.com/github/tensorflow/hub/blob/master/examples/colab/cross_lingual_similarity_with_tf_hub_multilingual_universal_encoder.ipynb
 
